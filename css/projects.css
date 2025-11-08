@@ -12,11 +12,11 @@ h1 {
 
  .grid {
   clear: both;
-  width: 100%;
+  max-width: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 20px;
+  margin: 0 auto;
 }
 
 
@@ -55,9 +55,7 @@ h1 {
 
   .gallery {
     margin: 5px;
-    float: left;
     border: 2px solid #333;
-    width: 200px;
     margin-bottom: 25px;
   }
 
@@ -76,4 +74,45 @@ h1 {
     text-align: center;
     clear: both;      /* ensures it starts below the floats */
     margin-top: 20px; /* now this works */
+}
+* {
+  box-sizing: border-box;
+}
+
+.resp {
+  padding: 0 6px;
+  float: left;
+  width: 25%; /* 4 columns default */
+  margin-bottom: 12px;
+}
+
+/* 2 columns on medium screens */
+@media only screen and (max-width: 700px) {
+  .resp {
+    width: 50%;
+  }
+}
+
+/* 1 column on small screens */
+@media only screen and (max-width: 500px) {
+  .resp {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Optional: make images fill their container */
+.resp img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Clear floats after each row */
+.content-section::after {
+  content: "";
+  display: table;
+  clear: both;
 }

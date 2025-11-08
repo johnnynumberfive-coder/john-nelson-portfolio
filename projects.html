@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Nelson</title>
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <h1>Projects</h1><br><br>
+    <div class="grid">
+  <div class="box" onclick="showSection('frontEnd')">Front End</div>
+  <div class="box" onclick="showSection('backEnd')">Back End</div>
+  <div class="box" onclick="showSection('fullStack')">Full Stack</div>
+</div>
+
+<div id="content-area">
+
+  <div id="frontEnd" class="content-section" style="display:none;">
+    <h2>Front End</h2>
+    <div class="box">Clock</div><br>
+    <div class="box">Weather App</div>
+  </div>
+
+  <div id="backEnd" class="content-section" style="display:none;">
+    <h2>Back End</h2>
+    <p>Your back-end project info here...</p>
+  </div>
+
+  <div id="fullStack" class="content-section" style="display:none;">
+    <h2>Full Stack</h2>
+    <p>Your full-stack project info here...</p>
+  </div>
+
+</div>
+
+
+<script>
+function showSection(sectionId) {
+  // hide all
+  document.querySelectorAll('.content-section').forEach(div => {
+    div.style.display = 'none';
+  });
+
+  // show selected
+  document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+
+</body>
+</html>

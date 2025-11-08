@@ -24,7 +24,7 @@ html, body {
     display: table-cell;
     width: auto;
     height: 100%;
-    background-image: linear-gradient(to bottom, red, blue);
+    background-image: linear-gradient(to top, #cc4a4a, #e4d068, #4a79cc);
     background-size: cover;
     background-repeat: no-repeat;
   }

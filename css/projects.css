@@ -58,6 +58,7 @@ h1 {
     float: left;
     border: 2px solid #333;
     width: 200px;
+    margin-bottom: 25px;
   }
 
   .gallery img {
@@ -69,3 +70,10 @@ h1 {
     padding: 20px;
     text-align: center;
   }
+
+  p.copyright {
+    width: 100%;
+    text-align: center;
+    clear: both;      /* ensures it starts below the floats */
+    margin-top: 20px; /* now this works */
+}

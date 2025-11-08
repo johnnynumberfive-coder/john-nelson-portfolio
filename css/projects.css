@@ -35,7 +35,7 @@ h1 {
 
   /* Optional: hover effect */
   .box:hover {
-    background-color: #e0e0e0;
+    background-color: #334;
     cursor: pointer;
   }
 
@@ -45,5 +45,27 @@ h1 {
   }
 
   h2 {
+    text-align: center;
+  }
+
+  .box a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  .gallery {
+    margin: 5px;
+    float: left;
+    border: 2px solid #333;
+    width: 200px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    padding: 20px;
     text-align: center;
   }
